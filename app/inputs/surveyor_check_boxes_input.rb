@@ -1,7 +1,6 @@
 class SurveyorCheckBoxesInput < Formtastic::Inputs::CheckBoxesInput
   include Surveyor::Helpers::FormtasticCustomInput
   def to_html
-    puts "git://github.com/cisbeo/surveyor.git"
     super
   end
   def choice_html(choice)
