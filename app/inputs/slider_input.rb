@@ -1,5 +1,7 @@
 class SliderInput
   include Formtastic::Inputs::Base
+  include Formtastic::SemanticFormBuilder
+  
   def to_html
  
     collection   = find_collection_for_column(method, options)
