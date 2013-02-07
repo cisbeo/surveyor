@@ -4,9 +4,6 @@ class SliderInput
   
   def to_html
  
-    collection   = find_collection_for_column(method, options)
-    html_options = strip_formtastic_options(options).merge(options.delete(:input_html) || {})
-
     input_id = generate_html_id(method,'')
     slider_id = "#{input_id}_slider"
     label_id = "#{input_id}_label"
