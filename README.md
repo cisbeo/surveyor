@@ -86,13 +86,6 @@ There are two other useful rake tasks:
 * `rake surveyor:unparse` exports a survey from the application into a
   file in the surveyor DSL.
 
-# Configuration
-Add the following line to your Formtastic initialization file:
-# config/initializers/formtastic.rb
-Formtastic::Helpers::FormHelper.builder = FormtasticBootstrap::FormBuilder
-
-# app/assets/stylesheets/application.css
-*= require formtastic-bootstrap
 
 # Upgrading
 
