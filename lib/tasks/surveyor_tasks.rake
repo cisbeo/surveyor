@@ -65,7 +65,7 @@ namespace :surveyor do
 
     survey_version = ENV["SURVEY_VERSION"]
     access_code = ENV["SURVEY_ACCESS_CODE"]
-
+puts access_code
     raise "USAGE: rake surveyor:dump SURVEY_ACCESS_CODE=<access_code> [OUTPUT_DIR=<dir>] [SURVEY_VERSION=<survey_version>]" unless access_code
     params_string = "code #{access_code}"
 
