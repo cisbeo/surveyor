@@ -62,7 +62,7 @@ namespace :surveyor do
   end
   desc "dump all responses to a given survey"
   task :dump => :environment do
-    require 'fileutils'
+
     survey_version = ENV["SURVEY_VERSION"]
     access_code = ENV["SURVEY_ACCESS_CODE"]
 
